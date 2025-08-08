@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Logo">
+        <h1>Event Booking Portal</h1>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#book">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Landing Section -->
+<section id="home" class="landing">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events">
+    <h2>Upcoming Events</h2>
+    <ul>
+        <li>
+            <h3>Rock the Stage - Annual Music Festival</h3>
+            <p>Date: August 29-31, 2025</p>
+            <p>Location: City Park Amphitheater</p>
+            <p>Featuring renowned bands and emerging artists across multiple genres. Don't miss out on this electrifying experience!</p>
+        </li>
+        <li>
+            <h3>Future Tech Conference 2025</h3>
+            <p>Date: September 15-17, 2025</p>
+            <p>Location: Grand Convention Center</p>
+            <p>Explore the latest advancements in AI, robotics, and sustainable technology. Network with industry leaders and innovators.</p>
+        </li>
+        <li>
+            <h3>Broadway Magic - A Musical Extravaganza</h3>
+            <p>Date: October 5, 2025</p>
+            <p>Location: Historic Grand Theatre</p>
+            <p>A dazzling performance showcasing classic Broadway hits and captivating new productions. Fun for the whole family!</p>
+        </li>
+    </ul>
+</section>
+
+<!-- Book Now Section -->
+<section id="book">
+    <h2>Book Your Event</h2>
+    <p>Choose your event and secure your spot instantly. Select an event from the list below, and follow the simple steps to confirm your attendance:</p>
+    <a href="#events" class="button">View All Events</a>
+    <form>
+        <label for="event-select">Select Event:</label>
+        <select id="event-select" name="event">
+            <option value="rock-the-stage">Rock the Stage - Annual Music Festival</option>
+            <option value="future-tech-conference">Future Tech Conference 2025</option>
+            <option value="broadway-magic">Broadway Magic - A Musical Extravaganza</option>
+        </select>
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" name="tickets" min="1" required>
+        <button type="submit">Proceed to Checkout</button>
+    </form>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>We're here to help! Reach out to us with any questions or inquiries.</p>
+    <p>Email: info@eventbooking.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <div class="contact-form">
+        <h3>Send us a Message</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
+
